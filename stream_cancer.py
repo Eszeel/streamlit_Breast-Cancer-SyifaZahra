@@ -29,7 +29,7 @@ with col1 :
 cancer_diagnosis = ''
 
 # membuat tombol untuk prediksi
-if st.button('Test Prediksi Cancer'):
+if st.button('Test Prediksi Breast Cancer'):
     cancer_prediction = cancer_model.predict([[mean_radius, mean_texture, mean_perimeter, mean_area, mean_smoothness]])
 
     if(cancer_prediction[0] == 1):
