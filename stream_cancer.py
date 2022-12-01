@@ -11,19 +11,19 @@ st.title('Data Mining Prediksi Breast Cancer')
 col1, col2 = st.columns(2)
 
 with col1 :
-    mean_radius = st.number_input ('input nilai mean_radius')
+    mean_radius = st.text_input ('input nilai Mean Radius (6.98-28.1)')
 
 with col2 :
-    mean_texture = st.number_input ('input nilai mean_texture')
+    mean_texture = st.text_input ('input nilai Mean Texture (9.71-39.3)')
 
 with col1 :
-    mean_perimeter = st.number_input ('input nilai mean_perimeter')
+    mean_perimeter = st.text_input ('input nilai Mean Perimeter (43.8-189)')
 
 with col2 :
-    mean_area = st.number_input ('input nilai mean_area')
+    mean_area = st.text_input ('input nilai Mean Area (144-2.5k)')
 
 with col1 :
-    mean_smoothness = st.number_input ('input nilai mean_smoothness')
+    mean_smoothness = st.text_input ('input nilai Mean Smoothness (0.05-0.16)')
 
 # code untuk prediksi
 cancer_diagnosis = ''
